@@ -1,0 +1,12 @@
+export const ACCESS_TOKEN = "access_token";
+export const Count_User = "countUser";
+export const User_Password = "UserPassword";
+export const User_Name = "UserName";
+export const User_Number = "UserNumber";
+export const Admin_Token = "AdminToken";
+export const Admin_Email = "AdminEmail";
+export const Admin_Password = "AdminPassword";
+export const Is_Admin = "IsAdmin";
+export const User_ID = "UserID";
+export const User_Email = "UserEmail";
+export const User_Image = "UserImage";
