@@ -4,10 +4,26 @@ import React from "react";
 const TabsRootLayout = () => {
   return (
     <Tabs>
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
-      <Tabs.Screen name="notes" options={{ title: "Notes" }} />
-      <Tabs.Screen name="papers" options={{ title: "Papers" }} />
-      <Tabs.Screen name="labs" options={{ title: "Labs" }} />
+      <Tabs.Screen
+        name="index"
+        options={{ title: "Home", headerTitleAlign: "center" }}
+      />
+      <Tabs.Screen
+        name="notes"
+        options={{ title: "Notes", headerTitleAlign: "center" }}
+      />
+      <Tabs.Screen
+        name="papers"
+        options={{ title: "Papers", headerTitleAlign: "center" }}
+      />
+      <Tabs.Screen
+        name="labs"
+        options={{ title: "Labs", headerTitleAlign: "center" }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{ title: "Settings", headerTitleAlign: "center" }}
+      />
     </Tabs>
   );
 };
