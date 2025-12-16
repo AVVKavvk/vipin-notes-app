@@ -19,7 +19,8 @@
         "monochromeImage": "./src/assets/images/logo.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.avvkvipin.vipinnotes"
     },
     "web": {
       "output": "static",
