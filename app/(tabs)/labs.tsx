@@ -1,11 +1,11 @@
-import React from "react";
-import { Text, View } from "react-native";
-
+import LoadingScreen from "@/src/lib/Loader";
+import React, { lazy, Suspense } from "react";
+const LabsIndex = lazy(() => import("@/src/components/Labs/Index"));
 const Labs = () => {
   return (
-    <View>
-      <Text>Labs</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <LabsIndex />
+    </Suspense>
   );
 };
 

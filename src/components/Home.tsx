@@ -1,5 +1,6 @@
 import features from "@/src/data/features.json";
 import { useTheme } from "@/src/hooks/useTheme";
+import { AntDesign } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
 import {
   Linking,
@@ -17,8 +18,7 @@ const Home = () => {
   const isDark = theme === "dark";
   const [registeredUsers, setRegisteredUsers] = useState<string>("1305");
 
-  async function openWebsite() {
-    const url = "https://vipinnotes.onrender.com";
+  async function openWebsite(url: string) {
     const supported = await Linking.canOpenURL(url);
     if (supported) {
       Linking.openURL(url);
@@ -70,7 +70,9 @@ const Home = () => {
 
           {/* CTA Button */}
           <TouchableOpacity
-            onPress={openWebsite}
+            onPress={() => {
+              openWebsite("https://vipinnotes.onrender.com");
+            }}
             className={`${
               isDark
                 ? "bg-purple-600 active:bg-purple-700"
@@ -157,10 +159,24 @@ const Home = () => {
 
         {/* Footer */}
         <View className="mt-12 mb-8 items-center">
+          <TouchableOpacity
+            className="bg-blue-600 mb-5 flex justify-center items-center rounded-md py-2 px-4 "
+            onPress={() => {
+              openWebsite("https://github.com/AVVKavvk/vipin-notes-app");
+            }}
+          >
+            <View className="flex items-center justify-center gap-3 flex-row">
+              <AntDesign name="github" size={24} color="white" />
+              <Text className={`text-white text-lg`}>Open Github</Text>
+            </View>
+          </TouchableOpacity>
           <Text
             className={`text-sm ${isDark ? "text-gray-500" : "text-gray-400"}`}
           >
             Made with 💜 for IIIT Pune
+          </Text>
+          <Text className={`${isDark ? "text-gray-500" : "text-gray-400"}`}>
+            Copyright 2025 Vipin. All Rights Reserved.
           </Text>
         </View>
       </View>

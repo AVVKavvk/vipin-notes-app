@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "Semester 1",
+    "sem": 1,
+    "semNameForLink": "sem1"
+  },
+  {
+    "tag": "Semester 2",
+    "sem": 2,
+    "semNameForLink": "sem2"
+  },
+  {
+    "tag": "Semester 3",
+    "sem": 3,
+    "semNameForLink": "sem3"
+  },
+  {
+    "tag": "Semester 4",
+    "sem": 4,
+    "semNameForLink": "sem4"
+  },
+  {
+    "tag": "Semester 5",
+    "sem": 5,
+    "semNameForLink": "sem5"
+  },
+  {
+    "tag": "Semester 6",
+    "sem": 6,
+    "semNameForLink": "sem6"
+  }
+]
