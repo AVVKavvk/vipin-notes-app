@@ -11,11 +11,13 @@ import {
 } from "react-native";
 import Toast from "react-native-toast-message";
 import { Count_User } from "../constant/storage";
+import { useAuthStore } from "../store/authStore";
 import { getItem } from "../utils/storage";
 
 const Home = () => {
   const theme = useTheme();
   const isDark = theme === "dark";
+  const { getUserCount } = useAuthStore();
   const [registeredUsers, setRegisteredUsers] = useState<string>("1305");
 
   async function openWebsite(url: string) {
@@ -30,13 +32,14 @@ const Home = () => {
       });
     }
   }
-  async function getUserCount() {
+  async function getUserCountFromStorage() {
+    await getUserCount();
     const users = (await getItem(Count_User)) ?? "1305";
     setRegisteredUsers(users);
   }
 
   useEffect(() => {
-    getUserCount();
+    getUserCountFromStorage();
   }, []);
 
   return (

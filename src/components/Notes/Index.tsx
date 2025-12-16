@@ -25,7 +25,6 @@ const NotesIndex = () => {
       pathname: "/note/[sem]", // points to the file structure
       params: { sem: semNameForLink, title: title }, // actual data
     });
-    // console.log(`Navigate to ${semNameForLink}`);
   };
 
   const getGradientColors = (index: number) => {
@@ -56,13 +55,27 @@ const NotesIndex = () => {
         className={`${isTablet ? "w-[48%]" : "w-full"} mb-4`}
       >
         <View
-          className={`rounded-2xl p-6 shadow-lg ${
+          className={`rounded-2xl p-6 shadow-lg overflow-hidden ${
             isDark ? "bg-gray-800 border border-gray-700" : "bg-white"
           }`}
           style={{
             elevation: 4,
           }}
         >
+          {/* Decorative Background Pattern */}
+          <View
+            className="absolute -right-8 -top-8 w-32 h-32 rounded-full opacity-10"
+            style={{
+              backgroundColor: gradient.start,
+            }}
+          />
+          <View
+            className="absolute -left-4 -bottom-4 w-24 h-24 rounded-full opacity-10"
+            style={{
+              backgroundColor: gradient.end,
+            }}
+          />
+
           {/* Semester Number Badge */}
           <View
             className="absolute -top-3 -right-3 w-14 h-14 rounded-full items-center justify-center shadow-md"
@@ -124,20 +137,45 @@ const NotesIndex = () => {
     <View className="mb-6">
       {/* Hero Section */}
       <View
-        className={`${isDark ? "bg-purple-900" : "bg-purple-50"} rounded-3xl p-6 mb-6`}
+        className={`rounded-3xl p-6 mb-6 overflow-hidden ${
+          isDark
+            ? "bg-gradient-to-br from-purple-900 to-indigo-900"
+            : "bg-gradient-to-br from-purple-50 to-indigo-50"
+        }`}
+        style={{
+          borderWidth: isDark ? 1 : 0,
+          borderColor: isDark ? "#8b5cf6" : "transparent",
+        }}
       >
-        <View className="flex-row items-center mb-3">
-          <Text className="text-5xl mr-3">📖</Text>
+        {/* Background decoration */}
+        <View
+          className="absolute -right-12 -top-12 w-40 h-40 rounded-full opacity-20"
+          style={{
+            backgroundColor: isDark ? "#8b5cf6" : "#6366f1",
+          }}
+        />
+        <View
+          className="absolute -left-8 -bottom-8 w-32 h-32 rounded-full opacity-20"
+          style={{
+            backgroundColor: isDark ? "#6366f1" : "#8b5cf6",
+          }}
+        />
+
+        <View className="flex-row items-center mb-4">
+          <View className="mr-3">
+            <Text className="text-6xl">📖</Text>
+          </View>
           <Text
-            className={`text-3xl font-bold ${
+            className={`text-3xl font-bold flex-1 ${
               isDark ? "text-white" : "text-purple-900"
             }`}
           >
             Notes Repository
           </Text>
         </View>
+
         <Text
-          className={`text-base leading-6 ${
+          className={`text-base leading-6 mb-4 ${
             isDark ? "text-purple-200" : "text-purple-800"
           }`}
         >
@@ -145,6 +183,19 @@ const NotesIndex = () => {
           companion. Dive into a wealth of lecture notes, handouts, and study
           materials, meticulously curated to cover every aspect of your courses.
         </Text>
+
+        <View
+          className={`flex-row items-center ${isDark ? "bg-purple-800" : "bg-white"} p-3 rounded-xl`}
+        >
+          <Text className="text-2xl mr-2">💡</Text>
+          <Text
+            className={`text-sm flex-1 ${
+              isDark ? "text-purple-100" : "text-purple-900"
+            }`}
+          >
+            Whether revising for exams or expanding your knowledge
+          </Text>
+        </View>
       </View>
 
       {/* Stats Cards */}
