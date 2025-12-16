@@ -3,10 +3,11 @@ import { NotesSchema } from "@/src/schema/NotesSchema";
 import { useNotesStore } from "@/src/store/notesStore";
 import {
   AlertCircle,
-  CheckCircle2,
-  Clock,
+  Calendar,
+  ExternalLink,
   FileText,
-  Link2,
+  ShieldCheck,
+  User,
   Video,
 } from "lucide-react-native";
 import React, { useEffect, useState } from "react";
@@ -93,14 +94,19 @@ const NotesBySem = ({ semLinkName }: NotesBySemProps) => {
         <View
           className={`mb-4 p-4 rounded-xl border ${cardBg} ${borderColor} shadow-sm`}
         >
-          {/* Header: Icon & Subject Name */}
+          {/* Header */}
           <View className="flex-row items-start justify-between">
-            <View className="flex-row items-center flex-1 pr-2">
+            <View className="flex-row items-center flex-1">
+              {/* Icon Container */}
               <View
-                className={`p-2 rounded-lg ${isDark ? "bg-blue-500/10" : "bg-blue-50"} mr-3`}
+                className={`p-2 rounded-lg ${
+                  isDark ? "bg-violet-500/10" : "bg-violet-50"
+                } mr-3`}
               >
-                <FileText size={24} color="#3b82f6" />
+                <FileText size={24} color="#8b5cf6" />
               </View>
+
+              {/* Text Info */}
               <View className="flex-1">
                 <Text
                   className={`text-lg font-bold ${textPrimary}`}
@@ -108,18 +114,34 @@ const NotesBySem = ({ semLinkName }: NotesBySemProps) => {
                 >
                   {item.subject_name || "Unknown Subject"}
                 </Text>
-                <Text className={`text-xs ${textSecondary}`}>
-                  {new Date(item.createdAt || Date.now()).toLocaleDateString()}
-                </Text>
+
+                {/* Date Row */}
+                <View className="flex-row items-center mt-1">
+                  <Calendar size={12} color={isDark ? "#94a3b8" : "#64748b"} />
+                  <Text className={`text-xs ${textSecondary} ml-1`}>
+                    {item.createdAt
+                      ? new Date(item.createdAt).toLocaleDateString()
+                      : "N/A"}
+                  </Text>
+                </View>
+
+                {/* Student Email Row */}
+                {item.studentEmail && (
+                  <View className="flex-row items-center mt-1">
+                    <User size={12} color={isDark ? "#94a3b8" : "#64748b"} />
+                    <Text
+                      className={`text-xs ${textSecondary} ml-1`}
+                      numberOfLines={1}
+                    >
+                      {item.studentEmail}
+                    </Text>
+                  </View>
+                )}
               </View>
             </View>
 
-            {/* Verification Badge */}
-            {item.isVerified ? (
-              <CheckCircle2 size={18} color="#10b981" />
-            ) : (
-              <Clock size={18} color="#f59e0b" />
-            )}
+            {/* Verified Badge */}
+            <ShieldCheck size={18} color="#10b981" />
           </View>
 
           {/* Action Buttons */}
@@ -130,7 +152,7 @@ const NotesBySem = ({ semLinkName }: NotesBySemProps) => {
               onPress={() => handleOpenLink(item.pdfUrl)}
               disabled={!item.pdfUrl}
             >
-              <Link2 size={18} color="#fff" />
+              <ExternalLink size={18} color="#fff" />
               <Text className="text-white font-semibold ml-2">View PDF</Text>
             </TouchableOpacity>
 

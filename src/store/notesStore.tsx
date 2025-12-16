@@ -12,7 +12,7 @@ export const useNotesStore = create<NotesStore>((set, get) => ({
       //   console.log(url);
       const res = await axiosClient.post(url);
       const data = res.data;
-      console.log(data);
+      // console.log(data);
       if (data.status === "ok") {
         const notesData: NotesSchema[] = data.result ?? [];
         return notesData;
