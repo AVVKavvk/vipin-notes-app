@@ -4,6 +4,9 @@ import { create } from "zustand";
 
 interface PaperStore {
   getPapersBySemester: (semLinkName: string) => Promise<PapersSchema[] | null>;
+  uploadPapersBySemester: (
+    paperData: PapersUploadSchema
+  ) => Promise<any | null>;
 }
 export const usePaperStore = create<PaperStore>((set, get) => ({
   getPapersBySemester: async (semLinkName: string) => {
