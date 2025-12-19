@@ -8,3 +8,10 @@ export type NotesSchema = {
   updatedAt?: string;
   isVerified?: boolean;
 };
+
+export type NotesUploadSchema = {
+  sem: string;
+  email: string;
+  pdfUrl: string;
+  subject: string;
+};

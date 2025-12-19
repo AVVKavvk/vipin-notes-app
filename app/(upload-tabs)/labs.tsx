@@ -1,11 +1,12 @@
-import React from "react";
-import { Text, View } from "react-native";
+import LoadingScreen from "@/src/lib/Loader";
+import React, { lazy, Suspense } from "react";
 
+const LabsUploadComponent = lazy(() => import("@/src/components/Upload/Labs"));
 const LabsUpload = () => {
   return (
-    <View>
-      <Text>LabsUpload</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <LabsUploadComponent />
+    </Suspense>
   );
 };
 

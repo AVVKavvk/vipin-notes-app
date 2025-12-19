@@ -8,3 +8,11 @@ export type PapersSchema = {
   updatedAt?: string;
   isVerified?: boolean;
 };
+
+export type PapersUploadSchema = {
+  sem: string;
+  email: string;
+  linkT1?: string;
+  linkT2?: string;
+  linkT3?: string;
+};

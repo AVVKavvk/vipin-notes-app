@@ -7,3 +7,10 @@ export type LabsSchema = {
   updatedAt?: string;
   isVerified?: boolean;
 };
+
+export type LabsUploadSchema = {
+  sem: string;
+  email: string;
+  link: string;
+  subject: string;
+};
