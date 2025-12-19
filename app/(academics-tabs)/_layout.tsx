@@ -2,13 +2,15 @@ import { useTheme } from "@/src/hooks/useTheme";
 import { Entypo, FontAwesome, Foundation } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
+
 const AcademicsTabsRootLayout = () => {
   const theme = useTheme();
   const isDark = theme === "dark";
+
   return (
     <Tabs screenOptions={{ headerShown: false }}>
       <Tabs.Screen
-        name="index"
+        name="notes"
         options={{
           title: "Notes",
           headerTitleAlign: "center",
@@ -53,25 +55,6 @@ const AcademicsTabsRootLayout = () => {
               />
             );
           },
-        }}
-      />
-      {/* Hide the detail routes from tabs */}
-      <Tabs.Screen
-        name="note/[sem]"
-        options={{
-          href: null, // This hides it from tab bar
-        }}
-      />
-      <Tabs.Screen
-        name="paper/[sem]"
-        options={{
-          href: null,
-        }}
-      />
-      <Tabs.Screen
-        name="lab/[sem]"
-        options={{
-          href: null,
         }}
       />
     </Tabs>

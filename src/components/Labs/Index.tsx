@@ -22,7 +22,7 @@ const LabsIndex = () => {
   const handleLabPress = (semNameForLink: string, title: string) => {
     // Navigate to lab detail page
     router.push({
-      pathname: "/(academics-tabs)/lab/[sem]",
+      pathname: "/(academics-tabs)/labs/[sem]",
       params: { sem: semNameForLink, title: title },
     });
     // console.log(`Navigate to ${semNameForLink} labs`);

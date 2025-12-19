@@ -22,7 +22,7 @@ const PapersIndex = () => {
   const handlePaperPress = (semNameForLink: string, title: string) => {
     // Navigate to paper detail page
     router.push({
-      pathname: "/(academics-tabs)/paper/[sem]",
+      pathname: "/(academics-tabs)/papers/[sem]",
       params: { sem: semNameForLink, title: title },
     });
     // console.log(`Navigate to ${semNameForLink} papers`);
