@@ -1,31 +1,14 @@
 import { useTheme } from "@/src/hooks/useTheme";
-import { AntDesign, Entypo, FontAwesome, Foundation } from "@expo/vector-icons";
+import { Entypo, FontAwesome, Foundation } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
 const TabsRootLayout = () => {
   const theme = useTheme();
   const isDark = theme === "dark";
   return (
-    <Tabs>
+    <Tabs screenOptions={{ headerShown: false }}>
       <Tabs.Screen
         name="index"
-        options={{
-          title: "Home",
-          headerTitleAlign: "center",
-
-          tabBarIcon: () => {
-            return (
-              <FontAwesome
-                size={28}
-                name="home"
-                color={isDark ? "white" : "black"}
-              />
-            );
-          },
-        }}
-      />
-      <Tabs.Screen
-        name="notes"
         options={{
           title: "Notes",
           headerTitleAlign: "center",
@@ -72,7 +55,7 @@ const TabsRootLayout = () => {
           },
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="settings"
         options={{
           title: "Settings",
@@ -87,7 +70,7 @@ const TabsRootLayout = () => {
             );
           },
         }}
-      />
+      /> */}
     </Tabs>
   );
 };
