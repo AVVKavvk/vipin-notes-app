@@ -7,7 +7,7 @@ import {
 } from "@react-navigation/native";
 import { Drawer } from "expo-router/drawer";
 import * as SplashScreen from "expo-splash-screen";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import {
   SafeAreaProvider,
@@ -28,9 +28,16 @@ export default function RootLayout() {
   // so that once Supabase/Version checks are done, we hide the splash.
   const onAppReady = async () => {
     setIsReady(true);
-    await SplashScreen.hideAsync();
+    // await SplashScreen.hideAsync();
   };
 
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      await SplashScreen.hideAsync();
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <ThemeProvider value={theme === "dark" ? DarkTheme : DefaultTheme}>
       <SafeAreaProvider initialMetrics={initialWindowMetrics}>
