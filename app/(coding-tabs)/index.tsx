@@ -1,11 +1,12 @@
-import React from "react";
-import { Text, View } from "react-native";
+import LoadingScreen from "@/src/lib/Loader";
+import React, { Suspense } from "react";
 
+const BotComponents = React.lazy(() => import("@/src/components/Coding/Bot"));
 const CodingBot = () => {
   return (
-    <View>
-      <Text>CodingBot</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <BotComponents />
+    </Suspense>
   );
 };
 

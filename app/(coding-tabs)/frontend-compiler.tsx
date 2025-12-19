@@ -1,11 +1,14 @@
-import React from "react";
-import { Text, View } from "react-native";
+import LoadingScreen from "@/src/lib/Loader";
+import React, { lazy, Suspense } from "react";
 
+const CompilerComponents = lazy(
+  () => import("@/src/components/Coding/Compiler")
+);
 const FrontendCompiler = () => {
   return (
-    <View>
-      <Text>FrontendCompiler</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <CompilerComponents />
+    </Suspense>
   );
 };
 
