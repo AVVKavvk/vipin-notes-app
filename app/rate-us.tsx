@@ -1,11 +1,11 @@
-import React from "react";
-import { Text, View } from "react-native";
-
+import LoadingScreen from "@/src/lib/Loader";
+import React, { lazy, Suspense } from "react";
+const RateUsComponents = lazy(() => import("@/src/components/RateUs"));
 const RateUs = () => {
   return (
-    <View>
-      <Text>RateUs</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <RateUsComponents />
+    </Suspense>
   );
 };
 

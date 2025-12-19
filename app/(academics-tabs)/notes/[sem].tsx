@@ -2,7 +2,7 @@
 import { useTheme } from "@/src/hooks/useTheme";
 import LoadingScreen from "@/src/lib/Loader";
 import { Stack, useLocalSearchParams } from "expo-router";
-import { lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Text, View } from "react-native";
 
 const NotesBySem = lazy(() => import("@/src/components/Notes/NotesBySem"));
