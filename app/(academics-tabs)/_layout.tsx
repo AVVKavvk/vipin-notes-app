@@ -2,7 +2,7 @@ import { useTheme } from "@/src/hooks/useTheme";
 import { Entypo, FontAwesome, Foundation } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import React from "react";
-const TabsRootLayout = () => {
+const AcademicsTabsRootLayout = () => {
   const theme = useTheme();
   const isDark = theme === "dark";
   return (
@@ -55,24 +55,27 @@ const TabsRootLayout = () => {
           },
         }}
       />
-      {/* <Tabs.Screen
-        name="settings"
+      {/* Hide the detail routes from tabs */}
+      <Tabs.Screen
+        name="note/[sem]"
         options={{
-          title: "Settings",
-          headerTitleAlign: "center",
-          tabBarIcon: () => {
-            return (
-              <AntDesign
-                size={28}
-                name="setting"
-                color={isDark ? "white" : "black"}
-              />
-            );
-          },
+          href: null, // This hides it from tab bar
         }}
-      /> */}
+      />
+      <Tabs.Screen
+        name="paper/[sem]"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="lab/[sem]"
+        options={{
+          href: null,
+        }}
+      />
     </Tabs>
   );
 };
 
-export default TabsRootLayout;
+export default AcademicsTabsRootLayout;

@@ -22,7 +22,7 @@ const NotesIndex = () => {
   const handleSemesterPress = (semNameForLink: string, title: string) => {
     // Navigate to semester detail page
     router.push({
-      pathname: "/note/[sem]", // points to the file structure
+      pathname: "/(academics-tabs)/note/[sem]", // points to the file structure
       params: { sem: semNameForLink, title: title }, // actual data
     });
   };

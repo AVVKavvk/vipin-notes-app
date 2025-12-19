@@ -84,21 +84,6 @@ export default function RootLayout() {
               name="login"
               options={{ drawerItemStyle: { display: "none" }, title: "Login" }}
             />
-            <Drawer.Screen
-              name="note/[sem]"
-              options={{ drawerItemStyle: { display: "none" }, title: "Notes" }}
-            />
-            <Drawer.Screen
-              name="lab/[sem]"
-              options={{ drawerItemStyle: { display: "none" }, title: "Labs" }}
-            />
-            <Drawer.Screen
-              name="paper/[sem]"
-              options={{
-                drawerItemStyle: { display: "none" },
-                title: "Papers",
-              }}
-            />
           </Drawer>
         </GestureHandlerRootView>
 
