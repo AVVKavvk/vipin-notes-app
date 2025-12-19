@@ -1,11 +1,12 @@
-import React from "react";
-import { Text, View } from "react-native";
+import LoadingScreen from "@/src/lib/Loader";
+import React, { lazy, Suspense } from "react";
 
+const ResumeComponent = lazy(() => import("@/src/components/Placement/Resume"));
 const Resume = () => {
   return (
-    <View>
-      <Text>Resume</Text>
-    </View>
+    <Suspense fallback={<LoadingScreen />}>
+      <ResumeComponent />
+    </Suspense>
   );
 };
 

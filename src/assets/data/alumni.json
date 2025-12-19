@@ -1,0 +1,582 @@
+[
+  {
+    "name": "Saksham Mahajan",
+    "image_url": "https://i.ibb.co/djBBcYv/6.png",
+    "linkedin_url": "https://www.linkedin.com/in/saksham-mahajan/",
+
+    "company": "JPMorgan"
+  },
+  {
+    "name": "Aman Singhal",
+    "image_url": "https://i.ibb.co/fNyqjJ9/35.png",
+    "linkedin_url": "https://www.linkedin.com/in/aman-singhal-805167199/",
+
+    "company": "Uber"
+  },
+  {
+    "name": "Garvit Rajput",
+    "image_url": "https://i.ibb.co/YN9WL9m/11.png",
+    "linkedin_url": "https://www.linkedin.com/in/garvit17/",
+
+    "company": "Moengage"
+  },
+  {
+    "name": "Rakshit Jain",
+    "image_url": "https://i.ibb.co/sj6Py6m/37.png",
+    "linkedin_url": "https://www.linkedin.com/in/rakshitjain13/",
+
+    "company": "Yugabyte"
+  },
+  {
+    "name": "Satyam Garg",
+    "image_url": "https://i.ibb.co/Lgh8TBS/37.png",
+    "linkedin_url": "https://www.linkedin.com/in/satty26/",
+
+    "company": "Yugabyte"
+  },
+  {
+    "name": "Aditya Raut",
+    "image_url": "https://i.ibb.co/N3CGYB8/5.png",
+    "linkedin_url": "https://www.linkedin.com/in/aditya-raut-551503169/",
+
+    "company": "Nutanix"
+  },
+  {
+    "name": "Hardik Mehta",
+    "image_url": "https://i.ibb.co/G7Fg9ZM/20.png",
+    "linkedin_url": "https://www.linkedin.com/in/hardikmehta48/",
+
+    "company": "Nutanix"
+  },
+  {
+    "name": "Naga sai kiran karra",
+    "image_url": "https://i.ibb.co/wwj2Rk2/41.png",
+    "linkedin_url": "https://www.linkedin.com/in/naga-sai-kiran-karra-b53923174/",
+
+    "company": "Nutanix"
+  },
+
+  {
+    "name": "Saurabh Jaiswal",
+    "image_url": "https://i.ibb.co/kJG1vQw/1.png",
+    "linkedin_url": "https://www.linkedin.com/in/saurabhhj/",
+
+    "company": "Amazon"
+  },
+
+  {
+    "name": "Aayush Choubey",
+    "image_url": "https://i.ibb.co/fCDYPKb/5.png",
+    "linkedin_url": "https://www.linkedin.com/in/aayush-choubey-6b5a5a195/",
+
+    "company": "Microsoft"
+  },
+
+  {
+    "name": "Rohan Lekhwani",
+    "image_url": "https://i.ibb.co/30VKknP/7.png",
+    "linkedin_url": "https://www.linkedin.com/in/rohanlekhwani/",
+
+    "company": "Amazon"
+  },
+
+  {
+    "name": "Jayesh Bhole",
+    "image_url": "https://i.ibb.co/W5kz14m/36.png",
+    "linkedin_url": "https://www.linkedin.com/in/jayeshbhole/",
+
+    "company": "Router Protocol"
+  },
+
+  {
+    "name": "Samarth Bhawsar",
+    "image_url": "https://i.ibb.co/6F5MCzR/38.png",
+    "linkedin_url": "https://www.linkedin.com/in/samarth1009/",
+
+    "company": "Groww"
+  },
+  {
+    "name": "Alok Prakash",
+    "image_url": "https://i.ibb.co/HxZdcJp/39.png",
+    "linkedin_url": "https://www.linkedin.com/in/alok-prakash-124389193/",
+
+    "company": "Groww"
+  },
+  {
+    "name": "Riya Aggarwal",
+    "image_url": "https://i.ibb.co/X4HK1ww/40.png",
+    "linkedin_url": "https://www.linkedin.com/in/riya-aggarwal-2807/",
+
+    "company": "Intuit"
+  },
+  {
+    "name": "Shubham Mehra",
+    "image_url": "https://i.ibb.co/0qGZ6ZQ/2.png",
+    "linkedin_url": "https://www.linkedin.com/in/shubhammehra4/",
+    "company": "RudderStack"
+  },
+  {
+    "name": "Sarthak Gupta",
+    "image_url": "https://i.ibb.co/v1gnq1P/24.png",
+    "linkedin_url": "https://www.linkedin.com/in/imsarthak/",
+
+    "company": "Groww"
+  },
+  {
+    "name": "Rushikesh Dhete",
+    "image_url": "https://i.ibb.co/MPQ534k/25.png",
+    "linkedin_url": "https://www.linkedin.com/in/rushikesh-dhete-48a043199/",
+
+    "company": "Autodesk"
+  },
+  {
+    "name": "Hrishikesh Kulkarni",
+    "image_url": "https://i.ibb.co/sV9cXLy/31.png",
+    "linkedin_url": "https://www.linkedin.com/in/hmkulkarni/",
+
+    "company": "Intel"
+  },
+  {
+    "name": "Ayan Koche",
+    "image_url": "https://i.ibb.co/ZHryBVR/32.png",
+    "linkedin_url": "https://www.linkedin.com/in/ayan-koche-08956a199/",
+
+    "company": "IBM"
+  },
+  {
+    "name": "Anand Pawar",
+    "image_url": "https://i.ibb.co/kxt9jzW/8.png",
+    "linkedin_url": "https://www.linkedin.com/in/anand-pawar-3099ap/",
+
+    "company": "Jio"
+  },
+  {
+    "name": "Gaurav Chaturvedi",
+    "image_url": "https://i.ibb.co/XFyp91B/3.png",
+    "linkedin_url": "https://www.linkedin.com/in/gaurav-chaturvedi-12943b193/",
+
+    "company": "o9Solutions"
+  },
+  {
+    "name": "Yatharth Kale",
+    "image_url": "https://i.ibb.co/LgJpWkY/9.png",
+    "linkedin_url": "https://www.linkedin.com/in/yatharth-kale-77a7161a7/",
+
+    "company": "GE Digital"
+  },
+  {
+    "name": "Nishit Sharma",
+    "image_url": "https://i.ibb.co/g9jyxhD/26.png",
+    "linkedin_url": "https://www.linkedin.com/in/nishit-sharma-146961197/",
+
+    "company": "CRED"
+  },
+  {
+    "name": "Swarnim Pratap Singh",
+    "image_url": "https://i.ibb.co/GvKDcqv/4.png",
+    "linkedin_url": "https://www.linkedin.com/in/theswarnim/",
+
+    "company": "CRED"
+  },
+  {
+    "name": "Prachhi Sabita Mishra",
+    "image_url": "https://i.ibb.co/HDQMxDj/10.png",
+    "linkedin_url": "https://www.linkedin.com/in/psm1507/",
+
+    "company": "ServiceNow"
+  },
+  {
+    "name": "Vijay Joshi ",
+    "image_url": "https://i.ibb.co/kHjFQh8/6.png",
+    "linkedin_url": "https://www.linkedin.com/in/vijay-joshi-80221a193/",
+
+    "company": "Navi"
+  },
+
+  {
+    "name": "Ashish Biswal",
+    "image_url": "https://i.ibb.co/k37xY4s/12.png",
+    "linkedin_url": "https://www.linkedin.com/in/ashish-biswal-1402/",
+
+    "company": "AltoMeta "
+  },
+  {
+    "name": "Aayush Vatsa",
+    "image_url": "https://i.ibb.co/Yy4LN3p/33.png",
+    "linkedin_url": "https://www.linkedin.com/in/aayush-vatsa-b2503317a/",
+
+    "company": "Anuta Networks"
+  },
+  {
+    "name": "Sanskar Hasija",
+    "image_url": "https://i.ibb.co/T4Nwkh2/13.png",
+    "linkedin_url": "https://www.linkedin.com/in/sanskar-hasija/",
+
+    "company": "AI Startup"
+  },
+  {
+    "name": "Tejas Jagtap",
+    "image_url": "https://i.ibb.co/4KVnCyY/14.png",
+    "linkedin_url": "https://www.linkedin.com/in/tejas-jagtap-2b801a193/",
+
+    "company": "Amplifier Electronic"
+  },
+  {
+    "name": "Aditya Kale",
+    "image_url": "https://i.ibb.co/9hfc3pG/15.png",
+    "linkedin_url": "https://www.linkedin.com/in/aditya-kale-6a7219138/",
+
+    "company": "Vahan"
+  },
+  {
+    "name": "Akash Babu Thottempudi",
+    "image_url": "https://i.ibb.co/gmPkd00/16.png",
+    "linkedin_url": "https://www.linkedin.com/in/akash-babu-thottempudi-26603b1b0/",
+
+    "company": "Coverstack"
+  },
+  {
+    "name": "Yogeshwar Patil",
+    "image_url": "https://i.ibb.co/XyV9ZX3/17.png",
+    "linkedin_url": "https://www.linkedin.com/in/yogeshwar06/",
+
+    "company": "PubMatic"
+  },
+  {
+    "name": "Bhupendra Sharma",
+    "image_url": "https://i.ibb.co/yPm3rdp/18.png",
+    "linkedin_url": "https://www.linkedin.com/in/bhupendra-sharma-b4b382157/",
+
+    "company": "Tanla Platforms"
+  },
+  {
+    "name": "Shrey Dangayach",
+    "image_url": "https://i.ibb.co/w7VYTDk/19.png",
+    "linkedin_url": "https://www.linkedin.com/in/shreyd01/",
+
+    "company": "Microsoft"
+  },
+  {
+    "name": "Chaitanya Karrothu",
+    "image_url": "https://i.ibb.co/j3BLKBL/20.png",
+    "linkedin_url": "https://www.linkedin.com/in/chaitanya-karrothu/",
+
+    "company": "Villageminds"
+  },
+  {
+    "name": "Bhargav Maradana",
+    "image_url": "https://i.ibb.co/3Y2yd7J/21.png",
+    "linkedin_url": "https://www.linkedin.com/in/bhargav-maradana22/",
+
+    "company": "Cogoport"
+  },
+  {
+    "name": "Ayush Vatsal",
+    "image_url": "https://i.ibb.co/TLb9txp/22.png",
+    "linkedin_url": "https://www.linkedin.com/in/ayush-vatsal-a57084193/",
+
+    "company": "Synopsys Inc"
+  },
+  {
+    "name": "Gaurav Sonawane",
+    "image_url": "https://i.ibb.co/346C86Y/23.png",
+    "linkedin_url": "https://www.linkedin.com/in/gaurav-v-sonawane/",
+
+    "company": "Whatfix"
+  },
+
+  {
+    "name": "Pankaj Gupta",
+    "image_url": "",
+    "linkedin_url": "https://www.linkedin.com/in/pankaj-gupta-profile/",
+
+    "company": "Info Edge"
+  },
+  {
+    "name": "Sannidhya Walzade",
+    "image_url": "https://i.ibb.co/6Rch0mc/27.png",
+    "linkedin_url": "https://www.linkedin.com/in/sannidhyawalzade/",
+
+    "company": "Nomura"
+  },
+  {
+    "name": "Pawan Jakke",
+    "image_url": "https://i.ibb.co/8K97Mx9/28.png",
+    "linkedin_url": "https://www.linkedin.com/in/pawan-jakke-21jan2000/",
+
+    "company": "o9Solutions"
+  },
+
+  {
+    "name": "Nainil Nandu",
+    "image_url": "https://i.ibb.co/zZYFdGs/30.png",
+    "linkedin_url": "https://www.linkedin.com/in/nainilnandu/",
+
+    "company": "Dezerv"
+  },
+
+  {
+    "name": "Harsh sahu",
+    "image_url": "https://i.ibb.co/4R1f9db/33.png",
+    "linkedin_url": "https://www.linkedin.com/in/harsh-sahu-hs/",
+
+    "company": "C-DOT"
+  },
+  {
+    "name": "Vikash Kumar Singh",
+    "image_url": "https://i.ibb.co/TRjYqHn/34.png",
+    "linkedin_url": "https://www.linkedin.com/in/vikash-kumar-singh-463021193/",
+
+    "company": "Jio"
+  },
+  {
+    "name": "Sandeep Gurijala",
+    "image_url": "https://i.ibb.co/f2yt5QK/35.png",
+    "linkedin_url": "https://www.linkedin.com/in/sandeepgurijala876/",
+
+    "company": "FIS"
+  },
+
+  {
+    "name": "Abhyudaya Apoorva",
+    "image_url": "https://i.ibb.co/Ltc2rMB/11.png",
+    "linkedin_url": "https://www.linkedin.com/in/abhyudaya-apoorva-8ab0b2193/",
+
+    "company": "Karza Technologies"
+  },
+  {
+    "name": "Tanmaye Devaraj",
+    "image_url": "https://i.ibb.co/HnYfsq0/29.png",
+    "linkedin_url": "https://www.linkedin.com/in/tanmaye-devaraj-b2935a1a1/",
+
+    "company": "IBM"
+  },
+  {
+    "name": "Shubham Mittal",
+    "image_url": "https://i.ibb.co/7V40VXd/2.png",
+    "linkedin_url": "https://www.linkedin.com/in/shubham-mittal-701220193/",
+
+    "company": "tinyEmail®"
+  },
+  {
+    "name": "Karan Khanna",
+    "image_url": "https://i.ibb.co/G224mCT/3.png",
+    "linkedin_url": "https://www.linkedin.com/in/cmd-karan/",
+
+    "company": "ServiceNow"
+  },
+  {
+    "name": "Nitesh Mishra",
+    "image_url": "https://i.ibb.co/tJyrjGv/4.png",
+    "linkedin_url": "https://www.linkedin.com/in/nitesh-mishra16/",
+
+    "company": "o9Solutions"
+  },
+
+  {
+    "name": "Prerit Kumar Jha",
+    "image_url": "https://i.ibb.co/2ZwVtXw/7.png",
+    "linkedin_url": "https://www.linkedin.com/in/preritkrjha/",
+
+    "company": "Intuit"
+  },
+  {
+    "name": "Prateek Gupta",
+    "image_url": "https://i.ibb.co/Pw6jTvC/8.png",
+    "linkedin_url": "https://www.linkedin.com/in/prateekgupta891/",
+
+    "company": "Salesforce"
+  },
+  {
+    "name": "Jimit Panditputra",
+    "image_url": "https://i.ibb.co/WBXdFT2/9.png",
+    "linkedin_url": "https://www.linkedin.com/in/jimit-panditputra/",
+
+    "company": "Texas Instruments"
+  },
+  {
+    "name": "Akshat Chaturvedi",
+    "image_url": "https://i.ibb.co/j4xtFjV/10.png",
+    "linkedin_url": "https://www.linkedin.com/in/akshatchaturvedi7/",
+
+    "company": "Nomura"
+  },
+
+  {
+    "name": "Shivam Patel",
+    "image_url": "https://i.ibb.co/6F5zN0V/12.png",
+    "linkedin_url": "https://www.linkedin.com/in/shivam-patel-602593201/",
+
+    "company": "Increff"
+  },
+  {
+    "name": "Akshay Kolhe",
+    "image_url": "https://i.ibb.co/0rQvpQt/13.png",
+    "linkedin_url": "https://www.linkedin.com/in/akshay-kolhe107/",
+
+    "company": "Paytm"
+  },
+  {
+    "name": "Ashutosh Giri ",
+    "image_url": "https://i.ibb.co/d2GcvyB/14.png",
+    "linkedin_url": "https://www.linkedin.com/in/ashutosh-giri/",
+
+    "company": "SSIR"
+  },
+  {
+    "name": "Devesh Katiyar",
+    "image_url": "https://i.ibb.co/26nSQ47/15.png",
+    "linkedin_url": "https://www.linkedin.com/in/devesh-katiyar-349346154/",
+
+    "company": "Nykaa"
+  },
+  {
+    "name": "Abhinav Kumar",
+    "image_url": "https://i.ibb.co/HVYT7pP/16.png",
+    "linkedin_url": "https://www.linkedin.com/in/iamabhinav02/",
+
+    "company": "Jio"
+  },
+  {
+    "name": "Subodh Ambade",
+    "image_url": "https://i.ibb.co/0MZqvJ2/17.png",
+    "linkedin_url": "https://www.linkedin.com/in/subodh-ambade-4368481b7/",
+
+    "company": "Nomura Holdings"
+  },
+  {
+    "name": "Aveekal Kumar",
+    "image_url": "https://i.ibb.co/27bTMf3/18.png",
+    "linkedin_url": "https://www.linkedin.com/in/aveekal-kumar/",
+
+    "company": "Niqo Robotics"
+  },
+  {
+    "name": "Mukesh Anand",
+    "image_url": "https://i.ibb.co/q0TnBX1/19.png",
+    "linkedin_url": "https://www.linkedin.com/in/mukesh-anand211/",
+
+    "company": "Kore.ai"
+  },
+
+  {
+    "name": "Piyush Gupta",
+    "image_url": "https://i.ibb.co/cFGbPgv/21.png",
+    "linkedin_url": "https://www.linkedin.com/in/piyushg9794/",
+
+    "company": "RouteMagic"
+  },
+  {
+    "name": "Abhishek Kumar",
+    "image_url": "https://i.ibb.co/m5wx3Rf/23.png",
+    "linkedin_url": "https://www.linkedin.com/in/abhishek-kumar-051853206/",
+
+    "company": "InsuranceDekho"
+  },
+  {
+    "name": "Shivam Upadhyay",
+    "image_url": "https://i.ibb.co/jDMKwbD/24.png",
+    "linkedin_url": "https://www.linkedin.com/in/shivam-upadhyay-a26440190/",
+
+    "company": "Philips"
+  },
+  {
+    "name": "Aadarsh Goyal",
+    "image_url": "https://i.ibb.co/QP3PvKs/25.png",
+    "linkedin_url": "https://www.linkedin.com/in/aadarsh-goyal-ag11/",
+
+    "company": "Increff"
+  },
+  {
+    "name": "Lalit Nagar",
+    "image_url": "https://i.ibb.co/G0khSnB/26.png",
+    "linkedin_url": "https://www.linkedin.com/in/lalitnagar-1279/",
+    "company": "Paytm"
+  },
+  {
+    "name": "Ayush Khare",
+    "image_url": "https://i.ibb.co/47q6hW3/27.png",
+    "linkedin_url": "https://www.linkedin.com/in/111ayushkhare/",
+
+    "company": "Searce Inc"
+  },
+  {
+    "name": "Harshit Kumar",
+    "image_url": "https://i.ibb.co/S0BRyHV/28.png",
+    "linkedin_url": "https://www.linkedin.com/in/harshit-kumar-1008/",
+
+    "company": "SSIR"
+  },
+  {
+    "name": "Prasad Dalwee",
+    "image_url": "https://i.ibb.co/2gJrFk7/29.png",
+    "linkedin_url": "https://www.linkedin.com/in/prasad-dalwee/",
+
+    "company": "Capri_Global"
+  },
+  {
+    "name": "Tushar Kadam",
+    "image_url": "https://i.ibb.co/m4VpW7k/30.png",
+    "linkedin_url": "https://www.linkedin.com/in/tushar-kadam-329542209/",
+
+    "company": "LTI"
+  },
+  {
+    "name": "Aditya Sadana",
+    "image_url": "https://i.ibb.co/pJQCkV2/31.png",
+    "linkedin_url": "https://www.linkedin.com/in/aditya-sadana/",
+
+    "company": "SmartReach.io"
+  },
+  {
+    "name": "punit pathade",
+    "image_url": "https://i.ibb.co/dB0cLrW/32.png",
+    "linkedin_url": "https://www.linkedin.com/in/punit-pathade-b143b1193/",
+    "company": "Google"
+  },
+
+  {
+    "name": "Ramnath Shenoy",
+    "image_url": "https://i.ibb.co/dPSSPfL/34.png",
+    "linkedin_url": "https://www.linkedin.com/in/ramnath-shenoy-10706215b/",
+
+    "company": "Affine"
+  },
+
+  {
+    "name": "Himanshu Rathore",
+    "image_url": "https://i.ibb.co/THK5SvW/36.png",
+    "linkedin_url": "https://www.linkedin.com/in/himanshu-rathore-687219193/",
+
+    "company": "InsuranceDekho"
+  },
+
+  {
+    "name": "Ankit Maurya",
+    "image_url": "https://i.ibb.co/CPtGVBS/38.png",
+    "linkedin_url": "https://www.linkedin.com/in/maurya-ankit/",
+
+    "company": "Paytm"
+  },
+  {
+    "name": "Sai Tharun",
+    "image_url": "https://i.ibb.co/rZbmQd2/39.png",
+    "linkedin_url": "https://www.linkedin.com/in/sai-tharun-675796202/",
+    "company": "o9Solutions"
+  },
+  {
+    "name": "Rutuja Pansare",
+    "image_url": "https://i.ibb.co/r5Lfw5Y/40.png",
+    "linkedin_url": "https://www.linkedin.com/in/rutuja-pansare/",
+
+    "company": "Walmart"
+  },
+
+  {
+    "name": "Yogesh Karan",
+    "image_url": "https://i.ibb.co/PgKy9xD/42.png",
+    "linkedin_url": "https://www.linkedin.com/in/yogesh-karan-a35009179/",
+
+    "company": "Gojek"
+  }
+]

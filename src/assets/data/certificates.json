@@ -1,0 +1,104 @@
+[
+  {
+    "company_name": "GOOGLE",
+    "link": "https://www.coursera.org/professional-certificates/google-it-automation?irclickid=SjUVEo1hlxyPT0mR4W1ntzHZUkFUNkTtq33v2U0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=1359419&utm_content=b2c",
+    "img_url": "https://img.icons8.com/color/48/google-logo.png",
+    "course_name": "Google IT Automation with Python "
+  },
+  {
+    "company_name": "IBM",
+    "link": "https://www.coursera.org/professional-certificates/ibm-data-science?irclickid=SjUVEo1hlxyPT0mR4W1ntzHZUkFUNhRBq33v2U0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=1359419&utm_content=b2c",
+    "img_url": "https://img.icons8.com/color/48/ibm.png",
+    "course_name": " IBM Data Science "
+  },
+  {
+    "company_name": "MICROSOFT",
+    "link": "https://learn.microsoft.com/en-us/training/paths/power-plat-fundamentals/",
+    "img_url": "https://img.icons8.com/color/48/microsoft.png",
+    "course_name": "Microsoft Power Platform Fundamentals"
+  },
+  {
+    "company_name": "UDEMY",
+    "link": "https://www.udemy.com/course/web-design-secrets/",
+    "img_url": "https://i.ibb.co/sQT66kx/udemy.png",
+    "course_name": "WebDesign for Web Developers"
+  },
+  {
+    "company_name": "GOOGLE",
+    "link": "https://learndigital-staging.withgoogle.com/digitalgarage/course/digital-marketing",
+    "img_url": "https://img.icons8.com/color/48/google-logo.png",
+    "course_name": "Fundamentals of digital marketing"
+  },
+  {
+    "company_name": "GOOGLE",
+    "link": "https://www.coursera.org/learn/cloud-infrastructure-design-process?irclickid=SjUVEo1hlxyPT0mR4W1ntzHZUkFUNlypq33v2U0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=1359419&utm_content=b2c",
+    "img_url": "https://img.icons8.com/color/48/google-logo.png",
+    "course_name": "Google Cloud Infrastructure"
+  },
+  {
+    "company_name": "UDEMY",
+    "link": "https://www.udacity.com/course/android-kotlin-developer-nanodegree--nd940?irclickid=zcyWSH1hBxyPT0mR4W1ntzHZUkFUNnyJq33v2U0&irgwc=1&utm_source=affiliate&utm_medium=&aff=1359419&utm_term=&utm_campaign=_best-google-course_&utm_content=&adid=786224",
+    "img_url": "https://i.ibb.co/sQT66kx/udemy.png",
+    "course_name": "Android Basics by Google"
+  },
+  {
+    "company_name": "UDACITY",
+    "link": "https://www.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352?irclickid=zcyWSH1hBxyPT0mR4W1ntzHZUkFUNGR9q33v2U0&irgwc=1&utm_source=affiliate&utm_medium=&aff=1359419&utm_term=&utm_campaign=_best-google-course_&utm_content=&adid=786224",
+    "img_url": "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-udacity-a-for-profit-educational-organization-founded-by-offering-massive-open-online-courses-logo-duo-tal-revivo.png",
+    "course_name": "Firebase in a Weekend "
+  },
+  {
+    "company_name": "UDEMY",
+    "link": "https://www.udemy.com/course/the-complete-guide-to-angular-2/?LSNPUBID=bt30QTxEyjA&ranEAID=bt30QTxEyjA&ranMID=47901&ranSiteID=bt30QTxEyjA-RJWqTsSD4POtrD0F6JSCAQ&utm_medium=udemyads&utm_source=aff-campaign",
+    "img_url": "https://i.ibb.co/sQT66kx/udemy.png",
+    "course_name": "Angular - The Complete Guide"
+  },
+  {
+    "company_name": " IIT KGP ",
+    "link": "https://nptel.ac.in/courses/102105100",
+    "img_url": "https://i.ibb.co/NSrn7b1/IITKgp.png",
+    "course_name": "Computational Neuroscience"
+  },
+  {
+    "company_name": "IIT-ROPAR",
+    "link": "https://onlinecourses.nptel.ac.in/noc23_cs110/preview",
+    "img_url": "https://i.ibb.co/k036HQx/IITRopar.png",
+    "course_name": "Deep Learning"
+  },
+  {
+    "company_name": "IIT KGP",
+    "link": "https://onlinecourses.nptel.ac.in/noc23_cs87/preview",
+    "img_url": "https://i.ibb.co/NSrn7b1/IITKgp.png",
+    "course_name": "Introduction To Machine Learning"
+  },
+  {
+    "company_name": "Stanford University",
+    "link": "https://online.stanford.edu/courses/xee100-introduction-internet-things",
+    "img_url": "https://i.ibb.co/zGS5LrL/stanford.png",
+    "course_name": "Introduction to Internet of Things"
+  },
+  {
+    "company_name": "HARVARD UNIVERSITY",
+    "link": "https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python",
+    "img_url": "https://i.ibb.co/Jtcrzq6/harvard.png",
+    "course_name": "CS50's Artificial Intelligence with Python"
+  },
+  {
+    "company_name": "HARVARD UNIVERSITY",
+    "link": "https://pll.harvard.edu/course/fundamentals-tinyml",
+    "img_url": "https://i.ibb.co/Jtcrzq6/harvard.png",
+    "course_name": "Fundamentals of TinyML"
+  },
+  {
+    "company_name": "HARVARD UNIVERSITY",
+    "link": "https://pll.harvard.edu/course/cs50s-introduction-game-development",
+    "img_url": "https://i.ibb.co/Jtcrzq6/harvard.png",
+    "course_name": "CS50's Game Development"
+  },
+  {
+    "company_name": "UNIVERSITY OF MICHIGAN",
+    "link": "https://www.coursera.org/learn/negotiation-skills?action=enroll",
+    "img_url": "https://i.ibb.co/xgWzyWP/MU.png",
+    "course_name": "Successful Negotiation: Essential Strategies and Skills"
+  }
+]

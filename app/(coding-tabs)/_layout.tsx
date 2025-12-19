@@ -17,7 +17,7 @@ const CodingTabsLayout = () => {
             return (
               <FontAwesome5
                 name="robot"
-                size={24}
+                size={28}
                 color={isDark ? "white" : "black"}
               />
             );
@@ -33,7 +33,7 @@ const CodingTabsLayout = () => {
             return (
               <FontAwesome
                 name="code"
-                size={24}
+                size={28}
                 color={isDark ? "white" : "black"}
               />
             );
