@@ -8,15 +8,17 @@ import {
   ShieldCheck,
   User,
 } from "lucide-react-native";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   FlatList,
   Linking,
+  RefreshControl,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
+import Toast from "react-native-toast-message";
 
 interface LabsBySemProps {
   semLinkName: string;
@@ -26,27 +28,43 @@ const LabsBySem = ({ semLinkName }: LabsBySemProps) => {
   const theme = useTheme();
   const isDark = theme === "dark";
   const { getLabsBySemester } = useLabsStore();
-
+  const [refreshing, setRefreshing] = useState(false);
   const [labs, setLabs] = useState<LabsSchema[]>([]);
   const [loading, setLoading] = useState(true);
+  const fetchLabs = async () => {
+    setLoading(true);
+    const data = await getLabsBySemester(semLinkName);
+
+    if (data) {
+      // FILTER: Only keep isVerified === true
+      const verifiedLabs = data.filter((lab) => lab.isVerified);
+      // console.log(verifiedLabs);
+
+      setLabs(verifiedLabs);
+    }
+    setLoading(false);
+  };
 
   useEffect(() => {
-    const fetchLabs = async () => {
-      setLoading(true);
-      const data = await getLabsBySemester(semLinkName);
-
-      if (data) {
-        // FILTER: Only keep isVerified === true
-        const verifiedLabs = data.filter((lab) => lab.isVerified);
-        // console.log(verifiedLabs);
-
-        setLabs(verifiedLabs);
-      }
-      setLoading(false);
-    };
-
     fetchLabs();
   }, [semLinkName]);
+
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await fetchLabs();
+      Toast.show({
+        type: "success",
+        text1: "Updated",
+        text2: "Labs refreshed successfully",
+        visibilityTime: 2000,
+      });
+    } catch (error) {
+      Toast.show({ type: "error", text1: "Failed to refresh" });
+    } finally {
+      setRefreshing(false);
+    }
+  }, []);
 
   // --- Theme Colors ---
   const bgMain = isDark ? "bg-slate-950" : "bg-gray-50";
@@ -172,6 +190,15 @@ const LabsBySem = ({ semLinkName }: LabsBySemProps) => {
         renderItem={renderItem}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={isDark ? "#06b6d4" : "#0891b2"} // iOS Spinner Color
+            colors={["#06b6d4"]} // Android Spinner Colors
+            progressBackgroundColor={isDark ? "#1f2937" : "#ffffff"}
+          />
+        }
       />
     </View>
   );

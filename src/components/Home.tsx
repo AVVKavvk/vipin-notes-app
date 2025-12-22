@@ -1,9 +1,10 @@
 import features from "@/src/data/features.json";
 import { useTheme } from "@/src/hooks/useTheme";
 import { AntDesign } from "@expo/vector-icons";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   Linking,
+  RefreshControl,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -12,12 +13,13 @@ import {
 import Toast from "react-native-toast-message";
 import { Count_User } from "../constant/storage";
 import { useAuthStore } from "../store/authStore";
-import { getItem } from "../utils/storage";
+import { getItem, setItem } from "../utils/storage";
 
 const Home = () => {
   const theme = useTheme();
   const isDark = theme === "dark";
   const { getUserCount } = useAuthStore();
+  const [refreshing, setRefreshing] = useState(false);
   const [registeredUsers, setRegisteredUsers] = useState<string>("1305");
 
   async function openWebsite(url: string) {
@@ -35,16 +37,42 @@ const Home = () => {
   async function getUserCountFromStorage() {
     await getUserCount();
     const users = (await getItem(Count_User)) ?? "1305";
+    await setItem(Count_User, users);
     setRegisteredUsers(users);
   }
 
   useEffect(() => {
     getUserCountFromStorage();
   }, []);
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await getUserCountFromStorage();
+      Toast.show({
+        type: "success",
+        text1: "Updated",
+        text2: "Refreshed successfully",
+        visibilityTime: 2000,
+      });
+    } catch (error) {
+      Toast.show({ type: "error", text1: "Failed to refresh" });
+    } finally {
+      setRefreshing(false);
+    }
+  }, []);
 
   return (
     <ScrollView
       className={`flex-1 ${isDark ? "bg-gray-900" : "bg-gradient-to-b from-purple-50 to-white"}`}
+      refreshControl={
+        <RefreshControl
+          refreshing={refreshing}
+          onRefresh={onRefresh}
+          tintColor={isDark ? "#a855f7" : "#8b5cf6"} // Purple color for iOS
+          colors={["#8b5cf6"]} // Purple color for Android
+          progressBackgroundColor={isDark ? "#1f2937" : "#ffffff"}
+        />
+      }
     >
       <View className="px-4 py-8">
         {/* Hero Section */}

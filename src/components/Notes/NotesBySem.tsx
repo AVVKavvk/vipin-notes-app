@@ -10,15 +10,17 @@ import {
   User,
   Video,
 } from "lucide-react-native";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   FlatList,
   Linking,
+  RefreshControl,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
+import Toast from "react-native-toast-message";
 
 interface NotesBySemProps {
   semLinkName: string;
@@ -28,22 +30,39 @@ const NotesBySem = ({ semLinkName }: NotesBySemProps) => {
   const theme = useTheme();
   const isDark = theme === "dark";
   const { getNotesBySemester } = useNotesStore();
-
+  const [refreshing, setRefreshing] = useState(false);
   const [notes, setNotes] = useState<NotesSchema[]>([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchNotes = async () => {
-      setLoading(true);
-      const data = await getNotesBySemester(semLinkName);
-      if (data) {
-        setNotes(data);
-      }
-      setLoading(false);
-    };
+  const fetchNotes = async () => {
+    setLoading(true);
+    const data = await getNotesBySemester(semLinkName);
+    if (data) {
+      setNotes(data);
+    }
+    setLoading(false);
+  };
 
+  useEffect(() => {
     fetchNotes();
   }, [semLinkName]);
+
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await fetchNotes();
+      Toast.show({
+        type: "success",
+        text1: "Updated",
+        text2: "Notes refreshed successfully",
+        visibilityTime: 2000,
+      });
+    } catch (error) {
+      Toast.show({ type: "error", text1: "Failed to refresh" });
+    } finally {
+      setRefreshing(false);
+    }
+  }, []);
 
   // --- Theme Colors ---
   const bgMain = isDark ? "bg-slate-950" : "bg-gray-50";
@@ -192,6 +211,15 @@ const NotesBySem = ({ semLinkName }: NotesBySemProps) => {
         renderItem={renderItem}
         contentContainerStyle={{ padding: 16, paddingBottom: 40 }}
         showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={isDark ? "#06b6d4" : "#0891b2"} // iOS Spinner Color
+            colors={["#06b6d4"]} // Android Spinner Colors
+            progressBackgroundColor={isDark ? "#1f2937" : "#ffffff"}
+          />
+        }
       />
     </View>
   );

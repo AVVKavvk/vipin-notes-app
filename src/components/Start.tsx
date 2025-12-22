@@ -14,8 +14,7 @@ import {
 
 const SUPABASE_URL = process.env.EXPO_PUBLIC_SUPABASE_URL;
 const SUPABASE_KEY = process.env.EXPO_PUBLIC_SUPABASE_KEY;
-const github_json_url =
-  "https://raw.githubusercontent.com/AVVKavvk/vipin-notes-app/main/version.json";
+const github_json_url = `https://raw.githubusercontent.com/AVVKavvk/vipin-notes-app/refs/heads/main/version.json?t=${new Date().getTime()}`;
 
 const supabase = createClient(SUPABASE_URL!, SUPABASE_KEY!);
 
@@ -53,6 +52,7 @@ export default function StartAppConfig({ onReady }: { onReady: () => void }) {
         // 2. Check GitHub Version
         const ghRes = await fetch(github_json_url);
         const ghData = await ghRes.json();
+        console.log("Github Data: ", ghData);
 
         if (ghData.latest_version !== appJsonVersion) {
           setUpdateData({

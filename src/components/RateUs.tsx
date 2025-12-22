@@ -1,10 +1,11 @@
 import { Send, Star, User } from "lucide-react-native";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   ActivityIndicator,
   FlatList,
   KeyboardAvoidingView,
   Platform,
+  RefreshControl,
   Text,
   TextInput,
   TouchableOpacity,
@@ -47,6 +48,7 @@ const RateUsComponents = () => {
   const [userInfo, setUserInfo] = useState("");
   const [ratingValue, setRatingValue] = useState(5);
   const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
   const [allRatings, setAllRatings] = useState<RateSchemaGet[]>([]);
 
   useEffect(() => {
@@ -57,6 +59,23 @@ const RateUsComponents = () => {
     const data = await getRateDataFromBackend();
     if (data) setAllRatings(data);
   };
+  // --- HARD REFRESH LOGIC ---
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    try {
+      await fetchRatings();
+      Toast.show({
+        type: "success",
+        text1: "Updated",
+        text2: "Reviews refreshed successfully",
+        visibilityTime: 2000,
+      });
+    } catch (error) {
+      Toast.show({ type: "error", text1: "Failed to refresh" });
+    } finally {
+      setRefreshing(false);
+    }
+  }, []);
 
   const handleSubmit = async () => {
     if (!review || !userInfo) {
@@ -215,6 +234,15 @@ const RateUsComponents = () => {
           <Text className="text-gray-500 italic mx-5">
             No reviews yet. Be the first!
           </Text>
+        }
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={isDark ? "#06b6d4" : "#0891b2"} // iOS Spinner Color
+            colors={["#06b6d4"]} // Android Spinner Colors
+            progressBackgroundColor={isDark ? "#1f2937" : "#ffffff"}
+          />
         }
       />
     </KeyboardAvoidingView>
