@@ -11,7 +11,7 @@ A modern, intuitive application built with React Native and Expo.
 
 ## 📱 Download
 
-Download the latest Android APK from the [Releases](https://github.com/AVVKavvk/vipin-notes-app/releases/tag/v1.0.0) page.
+Download the latest Android APK from the [Releases](https://github.com/AVVKavvk/vipin-notes-app/releases/tag/v1.1.0) page.
 
 ## 🌐 Web Version
 
